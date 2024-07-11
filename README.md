@@ -1,1 +1,1 @@
-[go](http://stackoverflow.com){:target="_blank" rel="noopener"}
+[test](http://test.com){:target="_blank"} renders as test{:target="_blank"}
