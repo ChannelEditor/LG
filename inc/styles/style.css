@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+html {
+	overflow-x: hidden;
+}
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+}
+body {
+	display: flow-root;
+	background-color: #f2f6fe;
+	width: 800px;
+	font-size: 14px;
+	color: #788188;
+	margin: 0 auto;
+	font-family: "Fira Sans Condensed", sans-serif;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+ [class^="icon-"], [class*=" icon-"] {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../svg/upload.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+.icon-sd {
+	background-image: url("../svg/sd.svg");
+}
+.icon-hd {
+	background-image: url("../svg/hd.svg");
+}
+.icon-uhd {
+	background-image: url("../svg/uhd.svg");
+}
+.icon-edit {
+	background-image: url("../svg/edit.svg");
+}
+.icon-delete {
+	background-image: url("../svg/delete.svg");
+}
+.icon-move {
+	background-image: url("../svg/move.svg");
+}
+.icon-paid {
+	background-image: url("../svg/paid.svg");
+}
+.icon-radio {
+	background-image: url("../svg/radio.svg");
+}
+.icon-unk {
+	background-image: url("../svg/unk.svg");
+}
+.icon-download {
+	background-image: url("../svg/download.svg");
+}
+.icon-none {
+	background-image: none;
+}
+
+
+.files {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	margin-top: 50px;
+	border: 4px dashed #c5c9cd;
+	padding: 20px;
+}
+.files i {
+	margin: 15px 0;
+	width: 80px;
+	height: 80px;
+}
+.files label {
+	padding: 10px 20px;
+	cursor: pointer;
+	background-color: #3498db;
+	color: #fff;
+	border-radius: 5px;
+
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.files.dragover {
+	border-color: #607D8B;
+}
+
+
+.lists {
+    margin: 50px 0;
+}
+.lists .list.deleted {
+	border-style: solid;
+	border-color: rgb(255 0 0 / 37%);
+}
+.lists .list.deleted div:nth-child(-n + 6) {
+    opacity: 0.4;
+}
+.lists .list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	padding: 7px;
+	margin-bottom: 4px;
+	border: 2px dashed transparent;
+}
+.lists .list div {
+	flex: 1;
+}
+.lists .list .x1 {
+	max-width: 40px;
+}
+.lists .list .x1 b {
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #e8f0f7;
+	text-align: center;
+	border-radius: 50%;
+}
+.lists .list .x2 {
+	flex-grow: 0;
+	flex-basis: 250px;
+}
+.lists .list .x4,
+.lists .list .x5,
+.lists .list .x6 {
+	text-align: center;
+}
+.lists .list .x7 {
+	flex-grow: 0;
+	flex-basis: 30px;
+}
+.lists .list .x8 {
+	display: inline-flex;
+	gap: 10px;
+	flex-grow: 0;
+	flex-basis: 100px;
+	justify-content: end
+}
+.lists .list .x8 .icon-edit {
+	display: none;
+}
+.lists .list.dragenter {
+    border-color: red;
+}
+.lists .list.dragenter > div {
+	pointer-events: none;
+}
+
+.download {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	right: 50px;
+	bottom: 50px;
+	background-color: #fff;
+	padding: 7px 7px 7px 25px;
+	font-size: 20px;
+	cursor: pointer;
+	border: 3px solid #0080ff;
+	border-radius: 32px;
+	box-shadow: rgb(0 0 0 / 34%) 0px 0px 10px;
+}
+.download i {
+    background-color: #0080ff;
+    padding: 20px;
+    background-size: 18px;
+    background-position: center;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.download.none {
+	display: none;
+}
