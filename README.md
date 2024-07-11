@@ -1,1 +1,1 @@
-<a href="https://channeleditor.github.io/LG/" target="_blank">Demo</a>
+<a href="[go](https://channeleditor.github.io/LG/){:target="_blank"}">Demo</a>
