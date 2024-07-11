@@ -1,1 +1,1 @@
-[Demo](https://channeleditor.github.io/LG/){:target="_blank"}
+[Demo](https://channeleditor.github.io/LG/){:target="_blank"}.
