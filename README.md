@@ -1,2 +1,1 @@
-Click [here](https://www.geeksforgeeks.org/){:target="_blank"} 
-to visit GeeksForGeeks website.
+[Demo](https://channeleditor.github.io/LG/)
