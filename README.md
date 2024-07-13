@@ -1,7 +1,9 @@
 # ⚡Channel Edit Link
 ➡️ [Go To Channel Edit Page](https://channeleditor.github.io/LG/)
 
-<img height="400" src="https://channeleditor.github.io/LG/inc/demo.gif"  />
+<div align="center">
+  <img src="https://channeleditor.github.io/LG/inc/demo.gif"  />
+</div>
 
 # 💫 About Me:
 🔭 I’m currently working on<br>
