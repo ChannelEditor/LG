@@ -2,7 +2,7 @@
 ➡️ [Go To Channel Edit Page](https://channeleditor.github.io/LG/)
 ###
 <div align="center">
-  <img height="200" src="https://channeleditor.github.io/LG/inc/demo.gif"  />
+  <img src="https://channeleditor.github.io/LG/inc/demo.gif"  />
 </div>
 ###
 # 💫 About Me:
@@ -11,6 +11,7 @@
 🌱 I’m currently learning<br>
 💬 Ask me about<br>
 ⚡ Fun fact
-###
+
 ---
+
 ![](https://visitcount.itsvg.in/api?id=arsivs&icon=0&color=0)
