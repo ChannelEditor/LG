@@ -39,10 +39,21 @@ function SelectFile(file) {
         json = x.concat(xx);
 
         json.forEach(function(item, i) {
+
+            //console.log(json[2]);
+            //throw new Error("DonguDurduruldu");
+
             let sat = searchJSON(legacybroadcast.satelliteList, item.satelliteId, item.physicalNumber),
-                type = (item.serviceType == 2) ? "radio" : (item.videoStreamType == 36) ? "uhd" : (item.videoStreamType == 27 ) ? "hd" : (item.videoStreamType == 0 ) ? "unk" : "sd",
-                paid = (item.scrambled === true) ? "paid" : "none",
-                deleted = (item.deleted === true) ? " deleted" : "";
+                paid = item.scrambled ? "paid" : "none",
+                deleted = item.deleted ? " deleted" : "",
+                // type = (item.serviceType == 2) ? "radio" : (item.videoStreamType == 36) ? "uhd" : (item.videoStreamType == 27 ) ? "hd" : (item.videoStreamType == 0 ) ? "unk" : "sd",
+                type = (item.serviceType == 2) ? "radio"
+                       : (item.videoStreamType == 36 || item.videoStreamType == 3 || item.videoStreamType == 168) ? "uhd"
+                       : (item.serviceType == 25 || item.serviceType == 31) ? "hd"
+                       : (item.serviceType == 22 || item.serviceType == 1 || item.videoStreamType == 1) ? "sd"
+                       : (item.videoStreamType == 2) ? "hd" 
+                       : (item.videoStreamType == 0) ? "unk"
+                       : "sd"; // Geri kalan durumlar için varsayılan
 
             yaz += Channel_List({
                 k: i,
